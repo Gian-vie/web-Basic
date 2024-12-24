@@ -24,10 +24,31 @@
 //proj 7 calculadora C° --> F°
 
 
-let celcius = 0
-let fahrenheith = 0
+// let celcius = 0
+// let fahrenheith = 0
 
-celcius = parseFloat(prompt('temperatura em celcius'))
-fahrenheith = celcius * 1.8 + 32
+// celcius = parseFloat(prompt('temperatura em celcius'))
+// fahrenheith = celcius * 1.8 + 32
 
-alert("a temperatura em farhenheith é de " + fahrenheith.toFixed(2))
+// alert("a temperatura em farhenheith é de " + fahrenheith.toFixed(2))
+
+//proj 8 conversor nota
+
+let nota = parseInt(prompt("digite sua nota"))
+if(nota > 100){
+    alert('Nota Invalida')
+} else if(nota >= 90){
+    alert('Sua nota é A')
+} else if(nota >= 85){
+    alert('Sua nota é B')
+} else if(nota >= 80){
+    alert('Sua nota é C')
+} else if(nota >= 70){
+    alert('Sua nota é D')
+} else if(nota >= 60){
+    alert('Sua nota é E')
+}else if(nota >= 0){
+    alert('Sua nota é f')
+} else {
+    alert('Nota Invalida')
+}
