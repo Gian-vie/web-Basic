@@ -70,10 +70,24 @@
 
 //proj 10 calculadora de porcentagem
 
-let conta = parseFloat(prompt("valor da conta"))
-let porcent = parseFloat (prompt("porcentagem de gorjeta (em decimal)"))
+// let conta = parseFloat(prompt("valor da conta"))
+// let porcent = parseFloat (prompt("porcentagem de gorjeta (em decimal)"))
 
 
-let valorTotal = conta + (conta * (porcent / 100)) 
+// let valorTotal = conta + (conta * (porcent / 100)) 
 
-alert("valor total da conta é de R$" + valorTotal.toFixed(2))
+// alert("valor total da conta é de R$" + valorTotal.toFixed(2))
+
+
+
+//proj 14 input de lista no html
+
+let listaCores = [];
+
+for(let i = 0; i <= 3; i++){
+    let cor = prompt("cor numero " + (i + 1) + ":")
+    listaCores[i] = cor
+};
+alert('sua lista é' + listaCores);
+
+document.getElementById('tabelaCores').innerHTML = listaCores

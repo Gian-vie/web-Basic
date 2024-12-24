@@ -6,6 +6,13 @@ p {
     text-shadow: 5px 5px rgb(255, 0, 0);
 }
 
+h1 {
+    font-size: 70px;
+    color: red;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
 body {
     background-color: lightgray;
 }
