@@ -56,13 +56,24 @@
 
 // proj 9 confirmação de eleitor
 
-let idade = parseInt(prompt("digite sua idade"))
-let titulo = prompt("Você possui titulo? (sim/não)")
-let idadeMinima = 18
-if(idade >= idadeMinima && titulo === "sim"){
-    alert("Você pode votar")
-} else if (idade >= idadeMinima && titulo !== "sim"){
-    alert("Você precisa de um titulo para votar")
-} else {
-    alert("Você não pode votar")
-}
+// let idade = parseInt(prompt("digite sua idade"))
+// let titulo = prompt("Você possui titulo? (sim/não)")
+// let idadeMinima = 18
+// if(idade >= idadeMinima && titulo === "sim"){
+//     alert("Você pode votar")
+// } else if (idade >= idadeMinima && titulo !== "sim"){
+//     alert("Você precisa de um titulo para votar")
+// } else {
+//     alert("Você não pode votar")
+// }
+
+
+//proj 10 calculadora de porcentagem
+
+let conta = parseFloat(prompt("valor da conta"))
+let porcent = parseFloat (prompt("porcentagem de gorjeta (em decimal)"))
+
+
+let valorTotal = conta + (conta * (porcent / 100)) 
+
+alert("valor total da conta é de R$" + valorTotal.toFixed(2))
