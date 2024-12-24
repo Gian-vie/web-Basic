@@ -34,21 +34,35 @@
 
 //proj 8 conversor nota
 
-let nota = parseInt(prompt("digite sua nota"))
-if(nota > 100){
-    alert('Nota Invalida')
-} else if(nota >= 90){
-    alert('Sua nota é A')
-} else if(nota >= 85){
-    alert('Sua nota é B')
-} else if(nota >= 80){
-    alert('Sua nota é C')
-} else if(nota >= 70){
-    alert('Sua nota é D')
-} else if(nota >= 60){
-    alert('Sua nota é E')
-}else if(nota >= 0){
-    alert('Sua nota é f')
+// let nota = parseInt(prompt("digite sua nota"))
+// if(nota > 100){
+//     alert('Nota Invalida')
+// } else if(nota >= 90){
+//     alert('Sua nota é A')
+// } else if(nota >= 85){
+//     alert('Sua nota é B')
+// } else if(nota >= 80){
+//     alert('Sua nota é C')
+// } else if(nota >= 70){
+//     alert('Sua nota é D')
+// } else if(nota >= 60){
+//     alert('Sua nota é E')
+// }else if(nota >= 0){
+//     alert('Sua nota é f')
+// } else {
+//     alert('Nota Invalida')
+// }
+
+
+// proj 9 confirmação de eleitor
+
+let idade = parseInt(prompt("digite sua idade"))
+let titulo = prompt("Você possui titulo? (sim/não)")
+let idadeMinima = 18
+if(idade >= idadeMinima && titulo === "sim"){
+    alert("Você pode votar")
+} else if (idade >= idadeMinima && titulo !== "sim"){
+    alert("Você precisa de um titulo para votar")
 } else {
-    alert('Nota Invalida')
+    alert("Você não pode votar")
 }
