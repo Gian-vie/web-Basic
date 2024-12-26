@@ -117,14 +117,34 @@ let numberList = document.getElementById("numberList");
 
 // proj 17 obj (Math) random background color
 
-let cores = ['red', 'blue', 'yellow', 'green', 'grey']
+// let cores = ['red', 'blue', 'yellow', 'green', 'grey']
 
-function changeColor() {
-    // let bodyColor = document.getElementById('body')
-    let randomColor = cores[Math.floor(Math.random() * cores.length)]
-    //--> gera através do id
-    // bodyColor.style.backgroundColor = cores[Math.floor(Math.random() * 5)]
-    //--> gera direto pelo body
-    document.body.style.backgroundColor = randomColor
+// function changeColor() {
+//     // let bodyColor = document.getElementById('body')
+//     let randomColor = cores[Math.floor(Math.random() * cores.length)]
+//     //--> gera através do id
+//     // bodyColor.style.backgroundColor = cores[Math.floor(Math.random() * 5)]
+//     //--> gera direto pelo body
+//     document.body.style.backgroundColor = randomColor
+// }
+
+// proj 19 random number guess
+
+let random = Math.floor(Math.random() * 100 )
+console.log(random)
+let tries = 0
+
+
+function checkGuess() {
+    let guess = document.getElementById('guess').value
+    let message = document.getElementById('message')
+    tries++
+
+    if(random == guess){
+        message.innerHTML = 'Acerto miseravi! em ' + tries + ' tentativas';
+    } else if (random > guess){
+        message.innerHTML = 'ta baixo';
+    }else {
+        message.innerHTML = 'ta alto';
+    }
 }
-
