@@ -10,7 +10,6 @@
 // console.log(`idade ${age}`)
 // document.getElementById('greeting').innerHTML = greeting + firstName
 
-
 //proj 6 array
 
 // let friends = ['ana', 'bruno', 'julia', 'bela']
@@ -20,9 +19,7 @@
 // console.log(friends[4])
 // friends[4] = 'junin'//add item
 
-
 //proj 7 calculadora C° --> F°
-
 
 // let celcius = 0
 // let fahrenheith = 0
@@ -53,7 +50,6 @@
 //     alert('Nota Invalida')
 // }
 
-
 // proj 9 confirmação de eleitor
 
 // let idade = parseInt(prompt("digite sua idade"))
@@ -67,18 +63,14 @@
 //     alert("Você não pode votar")
 // }
 
-
 //proj 10 calculadora de porcentagem
 
 // let conta = parseFloat(prompt("valor da conta"))
 // let porcent = parseFloat (prompt("porcentagem de gorjeta (em decimal)"))
 
-
-// let valorTotal = conta + (conta * (porcent / 100)) 
+// let valorTotal = conta + (conta * (porcent / 100))
 
 // alert("valor total da conta é de R$" + valorTotal.toFixed(2))
-
-
 
 //proj 14 input de lista no html
 
@@ -92,14 +84,22 @@
 
 // document.getElementById('tabelaCores').innerHTML = listaCores
 
-
 //proj 15 Ul in JS
 
-let numberList = document.getElementById('numberList')
+let numberList = document.getElementById("numberList");
 
+//lista generica
+// for(let i = 1; i <= 5; i++){
+//    let listItem = document.createElement('li')
+//     listItem.textContent = 'item ' + i
+//     numberList.appendChild(listItem)
+// }
 
-for(let i = 1; i <= 5; i++){
-   let listItem = document.createElement('li')
-    listItem.textContent = 'item ' + i
-    numberList.appendChild(listItem)
-}
+//lista existente
+
+let listaFrutas = ["banana", "maçã", "abacate", "cenoura", "abobora"]
+for (let i = 0; i <= 4; i++) {
+  let listItem = document.createElement("li");
+  listItem.textContent = "fruta: " + listaFrutas[i];
+  numberList.appendChild(listItem);
+};
