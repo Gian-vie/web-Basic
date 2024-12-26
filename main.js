@@ -104,7 +104,7 @@ let numberList = document.getElementById("numberList");
 //   numberList.appendChild(listItem);
 // };
 
-// proj 16 basico funções 
+// proj 16 basico funções
 
 // function greeting(name) {
 //     console.log('Hi' + name)
@@ -130,21 +130,61 @@ let numberList = document.getElementById("numberList");
 
 // proj 19 random number guess
 
-let random = Math.floor(Math.random() * 100 )
-console.log(random)
-let tries = 0
+// let random = Math.floor(Math.random() * 100 )
+// console.log(random)
+// let tries = 0
+
+// function checkGuess() {
+//     let guess = document.getElementById('guess').value
+//     let message = document.getElementById('message')
+//     tries++
+
+//     if(random == guess){
+//         message.innerHTML = 'Acerto miseravi! em ' + tries + ' tentativas';
+//     } else if (random > guess){
+//         message.innerHTML = 'ta baixo';
+//     }else {
+//         message.innerHTML = 'ta alto';
+//     }
+// }
+
+// //exemplo de extrutura diferente
+// variavel.addeventlistener('click', function()){
+//     Input.value = ''  // limpa o campo
+// }
+
+//proj 22 switch/case
+
+let userNum1 = document.getElementById("userNum1");
+let userNum2 = document.getElementById("userNum2");
+let operator = document.getElementById("operator");
+let calculateButton = document.getElementById("calculate");
+let resultDiv = document.getElementById("result");
+
+calculateButton.addEventListener("click", function () {
+  let num1 = Number(userNum1.value);
+  let num2 = Number(userNum2.value);
+  let op = operator.value;
+  let result;
+  
+  switch (op) {
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      result = num1 / num2;
+      break;
+      default:
+          result = 'Invalided Operator'
+  }
+
+  resultDiv.innerHTML = 'The result is ' + result
+});
 
 
-function checkGuess() {
-    let guess = document.getElementById('guess').value
-    let message = document.getElementById('message')
-    tries++
-
-    if(random == guess){
-        message.innerHTML = 'Acerto miseravi! em ' + tries + ' tentativas';
-    } else if (random > guess){
-        message.innerHTML = 'ta baixo';
-    }else {
-        message.innerHTML = 'ta alto';
-    }
-}
