@@ -115,7 +115,7 @@ let numberList = document.getElementById("numberList");
 //     titleH1.style.color = 'red'
 // }
 
-// proj 17 obj (Math)
+// proj 17 obj (Math) random background color
 
 let cores = ['red', 'blue', 'yellow', 'green', 'grey']
 
@@ -127,3 +127,4 @@ function changeColor() {
     //--> gera direto pelo body
     document.body.style.backgroundColor = randomColor
 }
+
