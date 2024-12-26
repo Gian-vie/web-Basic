@@ -82,12 +82,24 @@
 
 //proj 14 input de lista no html
 
-let listaCores = [];
+// let listaCores = [];
 
-for(let i = 0; i <= 3; i++){
-    let cor = prompt("cor numero " + (i + 1) + ":")
-    listaCores[i] = cor
-};
-alert('sua lista é' + listaCores);
+// for(let i = 0; i <= 3; i++){
+//     let cor = prompt("cor numero " + (i + 1) + ":")
+//     listaCores[i] = cor
+// };
+// alert('sua lista é' + listaCores);
 
-document.getElementById('tabelaCores').innerHTML = listaCores
+// document.getElementById('tabelaCores').innerHTML = listaCores
+
+
+//proj 15 Ul in JS
+
+let numberList = document.getElementById('numberList')
+
+
+for(let i = 1; i <= 5; i++){
+   let listItem = document.createElement('li')
+    listItem.textContent = 'item ' + i
+    numberList.appendChild(listItem)
+}
