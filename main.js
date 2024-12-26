@@ -110,7 +110,20 @@ let numberList = document.getElementById("numberList");
 //     console.log('Hi' + name)
 // }
 
+// function changeColor() {
+//     let titleH1 = document.getElementById('title')
+//     titleH1.style.color = 'red'
+// }
+
+// proj 17 obj (Math)
+
+let cores = ['red', 'blue', 'yellow', 'green', 'grey']
+
 function changeColor() {
-    let titleH1 = document.getElementById('title')
-    titleH1.style.color = 'red'
+    // let bodyColor = document.getElementById('body')
+    let randomColor = cores[Math.floor(Math.random() * cores.length)]
+    //--> gera através do id
+    // bodyColor.style.backgroundColor = cores[Math.floor(Math.random() * 5)]
+    //--> gera direto pelo body
+    document.body.style.backgroundColor = randomColor
 }
