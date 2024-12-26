@@ -97,9 +97,20 @@ let numberList = document.getElementById("numberList");
 
 //lista existente
 
-let listaFrutas = ["banana", "maçã", "abacate", "cenoura", "abobora"]
-for (let i = 0; i <= 4; i++) {
-  let listItem = document.createElement("li");
-  listItem.textContent = "fruta: " + listaFrutas[i];
-  numberList.appendChild(listItem);
-};
+// let listaFrutas = ["banana", "maçã", "abacate", "cenoura", "abobora"]
+// for (let i = 0; i <= 4; i++) {
+//   let listItem = document.createElement("li");
+//   listItem.textContent = "fruta: " + listaFrutas[i];
+//   numberList.appendChild(listItem);
+// };
+
+// proj 16 basico funções 
+
+// function greeting(name) {
+//     console.log('Hi' + name)
+// }
+
+function changeColor() {
+    let titleH1 = document.getElementById('title')
+    titleH1.style.color = 'red'
+}

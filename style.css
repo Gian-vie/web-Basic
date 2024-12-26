@@ -8,11 +8,12 @@ p {
 
 h1 {
     font-size: 70px;
-    color: red;
+    color: rgb(0, 0, 0);
     letter-spacing: 5px;
     text-align: center;
 }
 
 body {
+    text-align: center;
     background-color: lightgray;
 }
