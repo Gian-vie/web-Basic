@@ -49,3 +49,19 @@ select{
     margin: 2px;
 
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: bisque;
+}
+
+.image-wrapper {
+  margin: 20px 20px;
+}
+
+img {
+  max-width: 100%;
+}
